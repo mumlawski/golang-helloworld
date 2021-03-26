@@ -1,5 +1,3 @@
-nes (21 sloc)  845 Bytes
-  
 # Use the official Golang image to create a build artifact.
 # This is based on Debian and sets the GOPATH to /go.
 FROM golang:1.13 as builder
