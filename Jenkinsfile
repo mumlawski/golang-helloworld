@@ -4,7 +4,8 @@
 pipeline {
     agent { docker { 
           image 'golang:1.13'
-          args '-v /var/jenkins_home:/var/jenkins_home' 
+          args '-v /var/jenkins_home:/var/jenkins_home'
+          reuseNode true 
           } }
     stages {
         stage('build') {
