@@ -4,7 +4,7 @@
 pipeline {
     agent { docker { 
           image 'golang:1.13'
-          args '-v /var/jenkins_home:/var/jenkins_home'
+          args '-v c:/Michal/jenkins/workspace/test123_master:/var/jenkins_home/workspace/test123_master'
           args '-u 1000:1000'
           reuseNode true 
           } }
